@@ -71,5 +71,10 @@ o. Fix 'menu button'
 4. front end back end 
 
 5. other skills i am good at ? 
+6. Database & graph in website
+
+explain how I built website using web programming
+
+
 
 
