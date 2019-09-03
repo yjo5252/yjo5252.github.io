@@ -37,3 +37,39 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out
 
 
+
+### Thoughts
+#### 20190903
+o. Fix 'menu button'
+  * Services : skills i am good at 
+  * Portfolio : projects I conducted 
+  * About : me 
+  * My Introduction
+  * Contact
+1. Skills : Introduce what I am good at.
+  * I'll be required to explain the skillls.
+    * how to use it.
+    * what characteristics 
+   * why only 3? 
+    * Programming( Python, Java, Linux, Unix, Understanding (
+    *  Math (Algorithm)
+   * chagne pictures
+2. Project Specification
+  * Project Name
+  * Picture changed
+  * what themes big
+    * VR Escape Room game, (next step: Unity study -> Github upload + with README.md)
+    * Messeanger App
+    * Kakao Talk Update  Xd 
+    * Stealth Drone 
+    * WEb Programming
+  * MORE 
+  
+3.  About 
+
+
+4. front end back end 
+
+5. other skills i am good at ? 
+
+
