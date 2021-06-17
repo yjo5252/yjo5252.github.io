@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Personal Website">
+    <meta name="author" content="Ye Eun Jo">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,wght@800" rel="stylesheet" type="text/css">
+    <script type="./js/javascript" src="gallery.js"> </script>
+
+    <title>YeEun.Jo - AI/HCI Researcher</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/one-page-wonder.css" rel="stylesheet">
+
+    <!-- Map CSS -->
+    <link href="css/map.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="./main.html">YEEUN&#128526;</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="./cs_projects.html">Computer Science</a>
+                    </li>
+                    <li>
+                        <a href="./design_projects.html">Design Work</a>
+                    </li>
+                    <li>
+                        <a href="./WanderLust.html">WanderLust</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Full Width Image Header -->
+    <header class="">
+        <div class="headline">
+            <div class="container">
+                <h2> WanderLust </h2>
+                <p id="date"> A Strong Desire to Travel</p>
+            </div>
+        </div>
+    </header>
+    <!-- Page Content -->
+    <div class="container">
+
+        <hr class="featurette-divider">
+
+
+        <!-- Interacting map &gallery map -->
+        <div class="featurette map-info">
+
+
+          <!-- aside menu -->
+          <div class="travel-gallery">
+              <div class="aside-menu-container container">
+                <div class="menu-item">
+
+                  <div class="showright">
+
+                    <!-- Asia -->
+                    <div class="continent">
+                      <a href="javascript:void(0);" onclick="toggleAsia()">
+                        <span class="icon-ico-ContinentAsia"></span>
+                        <span class="WithUppercase">South Korea</span>
+
+                      </a>
+                    </div>
+                    <div class="showright-content">
+                      <div class="cities">
+                        <a href="javascript:void(0);" onclick="toggleSeoul()">Seoul</a>
+                        <a href="javascript:void(0);" onclick="toggleYeosu()">Yeosu</a>
+                        <a href="javascript:void(0);" onclick="toggleJeju()">Jeju</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Europe -->
+                  <div class="showright">
+                    <div class="continent">
+                      <a href="javascript:void(0);" onclick="toggleEurope()">
+                        <span class="icon-ico-ContinentEurope"></span>
+                        <span class="WithUppercase">Europe</span>
+                      </a>
+                    </div>
+
+                    <div class="showright-content">
+                      <div class="cities">
+                        <a href="javascript:void(0);" onclick="toggleParis()">Paris</a>
+                        <a href="javascript:void(0);" onclick="toggleLondon()">London</a>
+                        <a href="javascript:void(0);" onclick="toggleNice()">Nice</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- NorthAmerica -->
+                  <div class="showright">
+                    <div class="continent">
+                      <a href="javascript:void(0);" onclick="toggleUSA()">
+                        <span class="icon-ico-ContinentEurope"></span>
+                        <span class="WithUppercase">NorthAmerica</span>
+                      </a>
+                    </div>
+                    <div class="showright-content">
+                      <div class="cities">
+                        <a href="javascript:void(0);" onclick="toggleSan()">San Francisco</a>
+                        <a href="javascript:void(0);" onclick="toggleChicago()">Chicago</a>
+                        <a href="javascript:void(0);" onclick="toggleNY()">New York </a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+          </div>
+
+          <!-- empty Featurette-->
+          <div class="featurette">
+
+            <!-- photos image -->
+            <div class="photos-container">
+
+              <div id="carousel" class="carousel slide" data-ride="carousel" >
+               <!-- Indicators -->
+               <ol class="carousel-indicators" >
+                   <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                   <li data-target="#carousel" data-slide-to="1"></li>
+                   <li data-target="#carousel" data-slide-to="2"></li>
+               </ol>
+               <!-- Wrapper for slides -->
+               <div class="carousel-inner" role="listbox" style="box-shadow: 5px 5px 10px #000;">
+                   <div class="item active">
+                     <img id="image1" src="#" width="100%" height="" alt="Carousel 01" >
+                      <div class="carousel-caption"></div>
+                   </div>
+                   <div class="item">
+                       <img id="image2" src="#" width="100%" height="" alt="Carousel 02">
+                       <div class="carousel-caption"></div>
+                   </div>
+                   <div class="item" >
+                       <img id="image3" src="#" width="100%" height="" alt="Carousel 03">
+                       <div class="carousel-caption"></div>
+                   </div>
+               </div>
+
+               <!-- Controls -->
+               <div class="icon-container">
+                 <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                     <i class="fa fa-chevron-left fa-2x"></i>
+                     <span class="sr-only">Previous</span>
+                 </a>
+                 <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                     <i class="fa fa-chevron-right fa-2x"></i>
+                     <span class="sr-only">Next</span>
+                 </a>
+               </div>
+
+             </div>
+            </div>
+
+            <!-- City Featurette -->
+            <div class="featurette" id="city-container">
+              <div id="align-top">
+                <h2 class="city-heading" id="city-name">Bucket List: Travel 100 Cities</h2>
+              </div>
+              <div id="align-bottom">
+                <iframe id="city-time" src="" frameborder="0" width="371" height="78"></iframe>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+    <hr class="featurette-divider">
+
+    <!-- Footer -->
+    <footer>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>All contents &copy; Ye Eun Jo</p>
+            </div>
+        </div>
+    </footer>
+    <!-- /.container -->
+
+    <script type="text/javascript">
+
+        <!-- default image -->
+
+        var img1 = "./assets/graceinSeoul.png";
+        document.getElementById("image1").src = img1;
+
+        var img2 = "./assets/graceinEurope.png";
+        document.getElementById("image2").src = img2;
+
+        var img3 = "./assets/graceinUSA.png";
+        document.getElementById("image3").src = img3;
+
+
+        <!-- toggle boutton -->
+
+        function toggleAsia() {
+          document.getElementById("image1").src = "./assets/South Korea.png";
+          document.getElementById("image2").src = "./assets/Jeju/Jeju3.png";
+          document.getElementById("image3").src = "./assets/Seoul/Seoul3.png";
+
+        }
+        function toggleEurope() {
+          document.getElementById("image1").src = "./assets/Europe.png";
+          document.getElementById("image2").src = "./assets/Nice/Nice3.png";
+          document.getElementById("image3").src = "./assets/Paris/Paris3.png";
+        }
+        function toggleUSA() {
+          document.getElementById("image1").src = "./assets/USA.png";
+          document.getElementById("image2").src = "./assets/NewYork/NewYork3.png";
+          document.getElementById("image3").src = "./assets/SanFrancisco/SanFrancisco3.png";
+
+        }
+        function toggleSeoul() {
+          var city_name = "Seoul";
+          var img;
+          for (x = 1; x <= 3; x++) {
+            img = "./assets/"+city_name+"/"+city_name+x+".png";
+            console.log(img);
+            document.getElementById("image"+x).src=img;
+            document.getElementById("city-time").src="https://free.timeanddate.com/clock/i7upc7rv/n235/fn7/fs24/fc444/pct/bas2/bat1/bacfff/pa8/tt0/tw1/th1/ta1/tb4";
+            document.getElementById("city-name").innerHTML ="Seoul, South Korea";
+          }
+        }
+        function toggleYeosu() {
+          var city_name = "Yeosu";
+          var img;
+          for (x = 1; x <= 3; x++) {
+            img = "./assets/"+city_name+"/"+city_name+x+".png";
+            console.log(img);
+            document.getElementById("image"+x).src=img;
+            document.getElementById("city-name").innerHTML ="Yeosu, South Korea";
+            document.getElementById("city-time").src="https://free.timeanddate.com/clock/i7upc7rv/n235/fn7/fs24/fc444/pct/bas2/bat1/bacfff/pa8/tt0/tw1/th1/ta1/tb4";
+          }
+        }
+        function toggleJeju() {
+          var city_name = "Jeju";
+          var img;
+          for (x = 1; x <= 3; x++) {
+            img = "./assets/"+city_name+"/"+city_name+x+".png";
+            console.log(img);
+            document.getElementById("image"+x).src=img;
+            document.getElementById("city-name").innerHTML ="Jeju, South Korea";
+            document.getElementById("city-time").src="https://free.timeanddate.com/clock/i7upc7rv/n235/fn7/fs24/fc444/pct/bas2/bat1/bacfff/pa8/tt0/tw1/th1/ta1/tb4";
+          }
+        }
+        function toggleParis() {
+          var city_name = "Paris";
+          var img;
+          for (x = 1; x <= 3; x++) {
+            img = "./assets/"+city_name+"/"+city_name+x+".png";
+            console.log(img);
+            document.getElementById("image"+x).src=img;
+            document.getElementById("city-name").innerHTML ="Paris, France";
+            document.getElementById("city-time").src="https://free.timeanddate.com/clock/i7upc7rv/n195/fn7/fs24/fc444/pct/bas2/bat1/bacfff/pa8/tt0/tw1/th1/ta1/tb4";
+          }
+        }
+
+        function toggleLondon() {
+          var city_name = "London";
+          var img;
+          for (x = 1; x <= 3; x++) {
+            img = "./assets/"+city_name+"/"+city_name+x+".png";
+            console.log(img);
+            document.getElementById("image"+x).src=img;
+            document.getElementById("city-name").innerHTML ="London, United Kingdom";
+            document.getElementById("city-time").src="https://free.timeanddate.com/clock/i7upc7rv/n136/fn7/fs24/fc444/pct/bas2/bat1/bacfff/pa8/tt0/tw1/th1/ta1/tb4";
+          }
+        }
+
+        function toggleNice() {
+          var city_name = "Nice";
+          var img;
+          for (x = 1; x <= 3; x++) {
+            img = "./assets/"+city_name+"/"+city_name+x+".png";
+            console.log(img);
+            document.getElementById("image"+x).src=img;
+            document.getElementById("city-name").innerHTML ="Nice, France";
+            document.getElementById("city-time").src="https://free.timeanddate.com/clock/i7upc7rv/n195/fn7/fs24/fc444/pct/bas2/bat1/bacfff/pa8/tt0/tw1/th1/ta1/tb4";
+          }
+        }
+
+        function toggleSan() {
+          var city_name = "SanFrancisco";
+          var img;
+          for (x = 1; x <= 3; x++) {
+            img = "./assets/"+city_name+"/"+city_name+x+".png";
+            console.log(img);
+            document.getElementById("image"+x).src=img;
+            document.getElementById("city-name").innerHTML ="San Francisco, United States of America";
+            document.getElementById("city-time").src="https://free.timeanddate.com/clock/i7upc7rv/n224/fn7/fs24/fc444/pct/bas2/bat1/bacfff/pa8/tt0/tw1/th1/ta1/tb4";
+          }
+        }
+        function toggleChicago() {
+          var city_name = "Chicago";
+          var img;
+          for (x = 1; x <= 3; x++) {
+            img = "./assets/"+city_name+"/"+city_name+x+".png";
+            console.log(img);
+            document.getElementById("image"+x).src=img;
+            document.getElementById("city-name").innerHTML ="Chicago, United States of America";
+            document.getElementById("city-time").src="https://free.timeanddate.com/clock/i7upc7rv/n64/fn7/fs24/fc444/pct/bas2/bat1/bacfff/pa8/tt0/tw1/th1/ta1/tb4";
+          }
+        }
+        function toggleNY() {
+          var city_name = "NewYork";
+          var img;
+          for (x = 1; x <= 3; x++) {
+            img = "./assets/"+city_name+"/"+city_name+x+".png";
+            console.log(img);
+            document.getElementById("image"+x).src=img;
+            document.getElementById("city-name").innerHTML ="New York, United States of America";
+            document.getElementById("city-time").src="https://free.timeanddate.com/clock/i7upc7rv/n179/fn7/fs24/fc444/pct/bas2/bat1/bacfff/pa8/tt0/tw1/th1/ta1/tb4";
+          }
+      }
+    </script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+
+
+  </body>
+</html>
