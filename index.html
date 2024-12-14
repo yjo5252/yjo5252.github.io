@@ -1,143 +1,419 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Personal Website">
-    <meta name="author" content="Yeeun Jo">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yeeun Jo- HCI Researcher</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-    <title>Yeeun Jo - HCI Researcher</title>
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    /* Header Section */
+    header {
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
 
-    <!-- Custom CSS -->
-    <link href="css/one-page-wonder.css" rel="stylesheet">
+    header h1 {
+      font-size: 2.5rem;
+    }
 
-  </head>
-  <body>
+    header p {
+      margin: 1rem 0;
+    }
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="./index.html">YEEUN JO</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="./cs_projects.html">Computer Science</a>
-                    </li>
-                    <li>
-                        <a href="./design_projects.html">Design Work</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+    /* Navigation Bar */
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #fff;
+      padding: 0.5rem 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
 
-    <!-- Full Width Image Header -->
-    <header class="header-image">
-        <div class="headline">
-            <div class="container">
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
 
-                <h2> Yeeun Jo </h2>
-                <img id="img-src" src="assets/gracegrace_.jpg" width = "30%"  height = "30%">
-                <p></p>
-              <p> I'm a researcher in human-computer interaction, currently a PhD student in Computer Science at the University of Illinois Urbana-Champaign working with Professor <a href= https://camillec.com target="_blank" rel="noopener noreferrer"><code>Camille Cobb</code></a> and 
-                Professor <a href=https://adambates.org/about/ target="_blank" rel="noopener noreferrer"><code> Adam Bates</code></a>. My research focuses on human-computer interaction. 
-                My work aims to portray patterns in data and build solutions to address users’ needs in areas of user experiences, security, and privacy.</p>
-                
-              <p> I graduated from Ewha Womans University with a B.S. degree in <a href=https://cms.ewha.ac.kr/user/indexMain.action?siteId=cseeng target="_blank" rel="noopener noreferrer"><code>Computer Science & Engineering</code></a> and a B.A. degree in <a href= https://scrantoncollege.ewha.ac.kr/escranton/index.do target="_blank" rel="noopener noreferrer"><code>Digital Humanities</code></a> at Seoul, South Korea. 
-                During my undergraduate years, I engaged in research developing document computational analysis software, 3D printing drones, and analyzing technical factors in interactive media arts. </p>
-                <p></p>
-            </div>
-        </div>
-    </header>
+    nav a:hover {
+      color: #4facfe;
+    }
 
-    <!-- Page Content -->
-    <div class="container">
+    /* Main Section */
+    main {
+      padding: 2rem 1rem;
+    }
 
-      <hr class="featurette-divider">
+    /* About Section */
+    .about {
+      background: #f4f4f4;
+      padding: 2rem 1rem;
+      border-radius: 8px;
+      margin: 2rem 0;
+      text-align: center;
+    }
 
-      <!-- First Feature -->
-        <div class="featurette" id="news">
+    .about h2 {
+      margin-bottom: 1rem;
+    }
 
-            <h2 class="featurette-heading">Recent News
+    .about p {
+      font-size: 1.1rem;
+      color: #555;
+    }
 
-            </h2>
-            <ul type="disc">
-            <p class="lead">
-                <p><li>At the IEEE Symposium on Security and Privacy (S&P) 2023, I presented a poster detailing a user study on two-factor authentication (2FA).</li></p>
-                <p><li>I contributed as a student volunteer at the ACM Conference on Human Factors in Computing Systems (CHI) in 2023.</li></p>
-                <p><li>In the fall of 2022, I commenced my doctoral studies in the Computer Science PhD program at the University of Illinois Urbana-Champaign.</li></p>
-                <p><li>As an online student volunteer, I contributed my efforts to the ACM Conference on Human Factors in Computing Systems (CHI) in 2022.</li></p>
-                <p><li>In 2021, I undertook an undergraduate research position at the Multicore Computing Lab at Seoul National University.</li></p>
-            </p>
-            </ul>
-        </div>
-      <!-- Second Feature -->
-        <div class="featurette" id="recent projects">
 
-            <h2 class="featurette-heading">Recent Projects
+    .about a {
+        color: #555;
+        font-weight: bold;
+        text-decoration: none;
+    }
 
-            </h2>
-            <ul type="disc">
-            <p class="lead">
-                <p>My research focuses on human computer interaction.</p> 
-                <p>  </p></p>
-               <p> In the <a href=https://sts.cs.illinois.edu=cseeng target="_blank" rel="noopener noreferrer"><code> Secure & Transparent Systems Lab</code></a>, I investigate issues of security in location-based mobile apps. </p>
-           
-            </ul>
-        </div>
-        <hr class="featurette-divider">
+    .about a:hover {
+        text-decoration: underline;
+    }
 
-       <!-- Third Feature -->
-        <div class="featurette" id="education">
+    /* Portfolio Section */
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin: 2rem 0;
+    }
 
-            <h2 class="featurette-heading">Publication
+    .portfolio img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
 
-            </h2>
-            <ul type="disc">
-            <p class="lead">
-                <p><li>Analysis of Technical Factors in Interactive Media Arts, with a Focus on Prix Ars Electronica Award Winners. <strong>Yeeun Jo</strong>, Uran Oh. Science and Information Conference. <a href= https://link.springer.com/chapter/10.1007/978-3-031-10461-9_21 target="_blank" rel="noopener noreferrer"><code>DOI</code></a></li></p>
-                <p><li>Stealth UAV through Coandă Effect. Dongyoon Shin, Hyeji Kim, Jihyuk Gong, Uijeong Jeong, <strong>Yeeun Jo</strong>, Eric Matson. IRC 2020: 2020 Fourth IEEE International Conference on Robotic Computing (IRC). <a href= https://ieeexplore.ieee.org/document/9287963 target="_blank" rel="noopener noreferrer"><code>DOI</code></a></li></p>
-                <p><li>Automatic Document Classification System using Natural Language Processing and Deep Learning. <strong>Yeeun Jo</strong>, Yoojin Jung, Yujin Park, Sojeong Chang. KCC 2020: Korea Computer Congress of the Korean Institute of Information Scientists and Engineers. <a href= https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE09874852 target="_blank" rel="noopener noreferrer"><code>PDF</code></a> </li></p>
-            </p>
-            </ul>
-        </div>
+    .portfolio img:hover {
+      transform: scale(1.05);
+    }
 
-            <hr class="featurette-divider">
+    /* News/Projects Section */
+    .news {
+      margin: 2rem 0;
+    }
 
-            <!-- Footer -->
-            <footer>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <p>All contents &copy; Yeeun Jo</p>
-                    </div>
-                </div>
-            </footer>
+    .news h2 {
+      margin-bottom: 1rem;
+    }
 
-            </div>
-            <!-- /.container -->
+    .news ul {
+      list-style-type: none;
+      padding: 0;
+    }
 
-            <!-- jQuery -->
-            <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    .news li {
+      margin-bottom: 1rem;
+      padding: 1rem;
+      background: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
-            <!-- Bootstrap Core JavaScript -->
-            <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    .news li h3 {
+      margin-bottom: 0.5rem;
+      color: #4facfe;
+    }
 
-  </body>
+    .news li p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    /* Contact Section */
+    .contact {
+      background: #f9f9f9;
+      padding: 2rem 1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 2rem 0;
+    }
+
+    .contact h2 {
+      margin-bottom: 1rem;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact input, .contact textarea, .contact button {
+      margin-bottom: 1rem;
+      padding: 0.8rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    .contact button {
+      background: #4facfe;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .contact button:hover {
+      background: #00c1fe;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #333;
+      color: white;
+      margin-top: 2rem;
+    }
+
+    /* Navigation Bar Links */
+    nav a:link,
+    nav a:visited {
+      color: #333; /* Default link color */
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #4facfe; /* Color when hovering */
+    }
+
+    nav a:active {
+      color: #00c1fe; /* Optional color for active state */
+    }
+
+    /* Hide older news items */
+    .older-news {
+        display: none;
+    }
+
+
+    /* Styles for Publications Section */
+    #publications {
+        background-color: #ffffff;
+        padding: 60px 0;
+        color: #333;
+    }
+
+    #publications h2 {
+        margin-bottom: 30px;
+
+    }
+
+    .publication {
+        margin-bottom: 40px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-left: 5px solid #4facfe;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .publication h3 {
+        margin-bottom: 10px;
+    }
+
+    .publication-details {
+        color: #555;
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+
+    .publication p {
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+
+    .publication a {
+        color: #4facfe;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .publication a:hover {
+        text-decoration: underline;
+    }
+
+    /* Smooth Scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Yeeun Jo</h1>
+  <p>HCI Researcher | Privacy & Security | Inclusive Design</p>
+</header>
+
+<nav>
+  <a href="#about">About me</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#news">Recent News</a>
+  <a href="#news">Publications</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main>
+  <section id="about" class="about">
+    <h2>About me</h2>
+    <p>
+      I am a Human-Computer Interaction (HCI) researcher with a focus on designing inclusive and privacy-preserving systems.
+      I am currently pursuing my PhD at the <a href="https://siebelschool.illinois.edu/" target="_blank"> University of Illinois Urbana-Champaign</a>, where I work with
+      <a href="https://camillec.com/" target="_blank"> Professor Camille Cobb</a> in the Computer Science Department and
+      <a href="https://adambates.org/about/" target="_blank">Professor Adam Bates</a> at
+      <a href="https://sts.cs.illinois.edu/" target="_blank">the Secure & Transparent Systems Lab</a>.
+      With experience in UX design, social computing, and identity-driven research, I create technologies that empower diverse user groups while prioritizing privacy and security.
+
+      For more details, see my <a href="https://drive.google.com/file/d/1ILZwNSShH3kMcGuaqv5RB_VWaJUci3ht/view?usp=drive_link" target="_blank"> CV</a>.
+    </p>
+
+    </section>
+
+
+  <section id="portfolio">
+    <h2>My Portfolio</h2>
+    <div class="portfolio">
+      <img src="assets/chatbot.png" alt="Portfolio Item 1">
+      <img src="assets/planetEarth.gif" alt="Portfolio Item 2">
+      <img src="assets/tagdocx_total.png" alt="Portfolio Item 3">
+      <img src="assets/UAV.jpg" alt="Portfolio Item 4">
+      <img src="assets/BBi-Talk Total.png" alt="Portfolio Item 5">
+      <img src="assets/weale_total2.png" alt="Portfolio Item 6">
+      <img src="assets/Kakao Group.gif" alt="Portfolio Item 6">
+    </div>
+  </section>
+
+  <section id="news" class="news">
+    <h2>Recent News & Projects</h2>
+    <ul>
+      <li class="news-item">
+        <h3>Poster Presentation at SPLICE 2024 All-hands Meeting</h3>
+        <p><strong>Date:</strong> November 18-20, 2024</p>
+        <p><strong>Location:</strong> Baltimore, MD, United States</p>
+        <p>I presented a poster on a user study of Fitness Privacy at the Security and Privacy in the Lifecycle of IoT for Consumer Environments (SPLICE) 2024 All-hands meeting.</p>
+      </li>
+      <li class="news-item">
+        <h3>Poster Presentation at IEEE S&P 2023: A User Study on Two-Factor Authentication</h3>
+        <p><strong>Date:</strong> May 22-24, 2023</p>
+        <p><strong>Location:</strong> San Francisco, CA, United States</p>
+        <p>I presented a poster on a user study of two-factor authentication (2FA) at the IEEE Symposium on Security and Privacy (S&P) 2023.</p>
+      </li>
+      <li class="news-item">
+        <h3>Student Volunteer at ACM CHI 2023</h3>
+        <p><strong>Date:</strong> April 23-28, 2022</p>
+        <p><strong>Location:</strong> Hamburg, Germany</p>
+        <p>I volunteered as a student at the ACM Conference on Human Factors in Computing Systems (CHI).</p>
+      </li>
+      <li class="news-item">
+        <h3>Student Volunteer at ACM CHI 2022</h3>
+        <p><strong>Date:</strong> April 30, 2022 - May 6, 2022</p>
+        <p><strong>Location:</strong> Online</p>
+        <p>I volunteered as an online student at the ACM Conference on Human Factors in Computing Systems (CHI), contributing remotely to the event.</p>
+      </li>
+      <li class="news-item older-news">
+        <h3>Publication X</h3>
+        <p>Published a paper on [topic] in [journal/conference].</p>
+      </li>
+      <li class="news-item older-news">
+        <h3>Workshop Y</h3>
+        <p>Conducted a workshop on [subject].</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="publications" class="section">
+  <div class="container">
+      <h2>Publications</h2>
+
+      <div class="publication">
+          <h3>Poster:“I Have Nothing to Protect”: Understanding the Factors of Adoption of 2FA in Social Media.</h3>
+          <p class="publication-details">
+            Yeeun Jo, Margie Ruffin, Mahnoor Jameel, and Camille Cobb<br>
+            44th IEEE Symposium on Security and Privacy (Oakland'23). San Francisco, CA, USA. May 22, 2023.</p>
+          <p><a href="https://sp2023.ieee-security.org/downloads/SP23-posters/sp23-posters-paper15-final_version_2_page_abstract.pdf" target="_blank">Read full paper</a></p>
+      </div>
+
+      <div class="publication">
+          <h3>Analysis of Technical Factors in Interactive Media Arts, with a Focus on Prix Ars Electronica Award Winners.</h3>
+          <p class="publication-details">
+            Yeeun Jo and Uran Oh.<br>
+            Intelligent Computing. SAI 2022. Lecture Notes in Networks and Systems, vol 506. Springer, Cham. July, 2022.</p>
+          <p><a href="https://doi.org/10.1007/978-3-031-10461-9_21" target="_blank">Read full paper</a></p>
+      </div>
+
+      <div class="publication">
+          <h3>Stealth UAV through Coandă Effect.</h3>
+          <p class="publication-details">
+            Dongyoon Shin, Hyeji Kim, Jihyuk Gong, Uijeong Jeong, Yeeun Jo, and Eric Matson.<br>
+            2020 Fourth IEEE International Conference on Robotic Computing (IRC), Taichung, Taiwan, 2020.</p>
+          <p><a href="https://doi.org/10.1109/IRC.2020.00040" target="_blank">Read full paper</a></p>
+      </div>
+
+      <!-- Additional publications -->
+      <div class="publication">
+          <h3>Automatic Document Classification System using Natural Language Processing and Deep Learning.</h3>
+          <p class="publication-details">
+            Yeeun Jo, Yoojin Jung, Yujin Park, Sojeong Chang.<br>
+            Proceeding Korea Computer Congress 2020. Seoul, Republic of Korea. July, 2020.</p>
+          <p><a href="https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE09874852" target="_blank">Read full paper</a></p>
+      </div>
+
+  </div>
+</section>
+
+
+</main>
+
+<footer>
+  <p>&copy; 2024 Yeeun Jo. All rights reserved.</p>
+</footer>
+
+<script>
+  // Smooth scroll navigation
+  const links = document.querySelectorAll('nav a');
+
+  links.forEach(link => {
+    link.addEventListener('click', event => {
+      event.preventDefault();
+      const targetId = link.getAttribute('href').substring(1);
+      const targetSection = document.getElementById(targetId);
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+  // ensure only the three most recent news items are visible while keeping the data intact
+  const allNews = document.querySelectorAll('.news-item');
+    const visibleNewsCount = 3; // Number of visible news items
+
+    for (let i = visibleNewsCount; i < allNews.length; i++) {
+        allNews[i].style.display = 'none';
+    }
+
+
+</script>
+
+</body>
 </html>
