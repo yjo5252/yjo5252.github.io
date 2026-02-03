@@ -2,6 +2,13 @@
 <html>
 <head>
     <title>Redirecting...</title>
+    <!-- Force HTTPS  -->
+    <script>
+    if (window.location.protocol === "http:") {
+        window.location.protocol = "https:";
+    }
+    </script>
+    <!-- LinkedIn redirect -->
     <script>
         window.location.href = "https://www.linkedin.com/in/grace-yeeun-jo/";  // Change to LinkedIn profile URL
     </script>
